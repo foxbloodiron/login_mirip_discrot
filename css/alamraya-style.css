@@ -25,6 +25,8 @@
 }
 html, body{
 	font-family: 'Whitney';
+    height: 100%;
+    width: 100%;
 
 }
 body{
@@ -187,7 +189,7 @@ a:hover{
 /*Particle JS*/
 #particles-with-parallax{
 	position: absolute;
-	width: 100%;
+	width: 110%;
 	height:100%;
     margin-left: -5%;
 	margin-right: -5%;
@@ -206,8 +208,8 @@ a:hover{
 
 @media(max-width: 576px){
     .ar-card{
-        width: 80%;
-        margin: auto;
+        width: unset;
+        margin: 20% auto;
     }
 
 /*    #particles-with-parallax{
@@ -229,7 +231,7 @@ ul{
     position: relative;
     overflow: hidden;
 }*/
-@media (min-width: 400px){
+@media (max-width: 400px){
     .scene {
         min-height: 360px;
     }
@@ -238,7 +240,7 @@ ul{
 .scene, .layer {
     display: block;
     height: 100%;
-    width: 110%;
+    width: 100%;
     padding: 0;
     margin: 0;
 }
@@ -384,46 +386,77 @@ ul{
     image-rendering: auto;
 }
 
-@media(max-width: 576px){
-    .forest-1{
+@media(max-width: 700px){
+    #particles-with-parallax{
         margin-left: unset;
+        margin-right: unset;
         margin-top: unset;
+        margin-bottom: unset;
         width: 100%;
+    }
+    .forest-1{
+        background-size:cover;
+        position: absolute;
+        /*height: 100%;
+        width: 100%;*/
+        left:unset;
+        right:unset;
     }
     .forest-2{
-        margin-left: unset;
-        margin-top: unset;
-        width: 100%;
+        background-size:cover;
+        position: absolute;
+        /*height: 100%;
+        width: 100%;*/
+        left:unset;
+        right:unset;
     }
     .forest-3{
-        margin-left: unset;
-        margin-top: unset;
-        width: 100%;
+        background-size:cover;
+        position: absolute;
+        /*height: 100%;
+        width: 100%;*/
+        left:unset;
+        right:unset;
     }
     .forest-4{
-        margin-left: unset;
-        margin-top: unset;
-        width: 100%;
+        background-size:cover;
+        position: absolute;
+        /*height: 100%;
+        width: 100%;*/
+        left:unset;
+        right:unset;
     }
     .forest-5{
-        margin-left: unset;
-        margin-top: unset;
-        width: 100%;
+        background-size:cover;
+        position: absolute;
+        /*height: 100%;
+        width: 100%;*/
+        left:unset;
+        right:unset;
     }
     .mountain-1{
-        margin-left: unset;
-        margin-top: unset;
-        width: 100%;
+        background-size:cover;
+        position: absolute;
+        /*height: 100%;
+        width: 100%;*/
+        left:unset;
+        right:unset;
     }
     .mountain-2{
-        margin-left: unset;
-        margin-top: unset;
-        width: 100%;
+        background-size:cover;
+        position: absolute;
+        /*height: 100%;
+        width: 100%;*/
+        left:unset;
+        right:unset;
     }
     .sky{
-        margin-left: unset;
-        margin-top: unset;
-        width: 100%;
+        background-size:cover;
+        position: absolute;
+        /*height: 100%;
+        width: 100%;*/
+        left:unset;
+        right:unset;
     }
 }
 /*@page {
