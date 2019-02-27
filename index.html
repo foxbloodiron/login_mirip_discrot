@@ -12,74 +12,93 @@
 </head>
 <body>
 
+
 	<div id="particles-with-parallax">
-		<div id="particles-js" data-depth="0.40"></div>
+			<div id="particles-js" class="layer" data-depth="0.40"></div>
 
-		<div data-depth="0.80" class="forest-1">
-			<img src="img/forest_parallax/forest-1.png">
-		</div>
+			<div data-depth="0.80" class="layer forest-1"></div>
 
-		<div data-depth="0.70" class="forest-2">
-			<img src="img/forest_parallax/forest-2.png">
-		</div>
+			<div data-depth="0.70" class="layer forest-2"></div>
 
-		<div data-depth="0.60" class="forest-3">
-			<img src="img/forest_parallax/forest-3.png">
-		</div>
+			<div data-depth="0.60" class="layer forest-3"></div>
 
-		<div data-depth="0.50" class="forest-4">
-			<img src="img/forest_parallax/forest-4.png">
-		</div>
-		<div data-depth="0.40" class="forest-5">
-			<img src="img/forest_parallax/forest-5.png">
-		</div>
+			<div data-depth="0.50" class="layer forest-4"></div>
 
-		<div data-depth="0.30" class="mountain-1">
-			<img src="img/forest_parallax/mountain-1.png">
-		</div>
+			<div data-depth="0.40" class="layer forest-5"></div>
 
-		<div data-depth="0.20" class="mountain-2">
-			<img src="img/forest_parallax/mountain-2.png">
-		</div>
+			<div data-depth="0.30" class="layer mountain-1"></div>
 
-		<div data-depth="0.10" class="sky">
-			<img src="img/forest_parallax/sky.png">
-		</div>
+			<div data-depth="0.20" class="layer mountain-2"></div>
+
+			<div data-depth="0.10" class="layer sky"></div>
+
+
+		
+	</div>
+	<!-- <ul class="scene" id="particles-with-parallax" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" >
+		<li class="layer" data-depth="0.40">
+			<div id="particles-js"></div>
+		</li>
+		<li class="layer" data-depth="0.80">
+			<div class="forest-1"><img src="img/forest_parallax/forest-1.png"></div>
+		</li>
+		<li class="layer" data-depth="0.70">
+			<div class="forest-2"><img src="img/forest_parallax/forest-2.png"></div>
+		</li>
+		<li class="layer" data-depth="0.60">
+			<div class="forest-3"><img src="img/forest_parallax/forest-3.png"></div>
+		</li>
+		<li class="layer" data-depth="0.50">
+			<div class="forest-4"><img src="img/forest_parallax/forest-4.png"></div>
+		</li>
+		<li class="layer" data-depth="0.40">				
+			<div class="forest-5"><img src="img/forest_parallax/forest-5.png"></div>
+		</li>
+		<li class="layer" data-depth="0.30">
+			<div class="mountain-1"><img src="img/forest_parallax/mountain-1.png"></div>
+		</li>
+		<li class="layer" data-depth="0.20">
+			<div class="mountain-2"><img src="img/forest_parallax/mountain-2.png"></div>
+		</li>
+		<li class="layer" data-depth="0.10">
+			<div class="sky"><img src="img/forest_parallax/sky.png"></div>
+		</li>
+	</ul> -->
+
 
 		<div class="container">
 			<div class="ar-card">
-			<div class="ar-card-header">
-				<img src="img/wau.jpg" width="100px" height="100px" class="ar-card-logo">
-				<div class="ar-card-header-h3">
-					PT. Sese Bose Jose Gandose
+				<div class="ar-card-header">
+					<img src="img/wau.jpg" width="100px" height="100px" class="ar-card-logo">
+					<div class="ar-card-header-h3">
+						PT. Sese Bose Jose Gandose
+					</div>
+					<div class="ar-card-header-h2">
+						Login
+					</div>
 				</div>
-				<div class="ar-card-header-h2">
-					Login
+				<div class="ar-card-body">
+
+					<div class="form-group">
+						<h5 class="form-label">Username</h5>
+						<input type="text" class="form-control" name="">
+					</div>
+
+					<div class="form-group">
+						<h5 class="form-label">Password</h5>
+						<input type="password" class="form-control" name="">
+					</div>
+					<a href="javascript:void(0);">Forgot your password?</a>
+
+					<button class="btn w-100 bg-primary" type="button">Login</button>
+					<label>
+						<span class="span-underbutton">Need an account?</span>
+						<a href="javascript:void(0);">Register</a>
+					</label>
 				</div>
 			</div>
-			<div class="ar-card-body">
-
-				<div class="form-group">
-					<h5 class="form-label">Username</h5>
-					<input type="text" class="form-control" name="">
-				</div>
-
-				<div class="form-group">
-					<h5 class="form-label">Password</h5>
-					<input type="password" class="form-control" name="">
-				</div>
-				<a href="javascript:void(0);">Forgot your password?</a>
-
-				<button class="btn w-100 bg-primary" type="button">Login</button>
-				<label>
-					<span class="span-underbutton">Need an account?</span>
-					<a href="javascript:void(0);">Register</a>
-				</label>
-			</div>
-		</div>
 		</div>
 
-	</div>
 	<footer>
 		<span>Copyright Xyzab 2019 &copy;</span>
 	</footer>
@@ -208,8 +227,9 @@ $(document).ready(function(){
 		var particles_js = document.getElementById('particles-with-parallax');
 
 		var parallax = new Parallax(particles_js, {
-			// limitX:100,
-			limitY:0,
+			limitX:50,
+			limitY:50,
+			relativeInput:true,
 			pointerEvents:true
 		});
 	}
