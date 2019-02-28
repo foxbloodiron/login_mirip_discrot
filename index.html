@@ -71,7 +71,7 @@
 		</div>
 
 	<footer>
-		<span>Copyright Xyzab 2019 &copy;</span>
+		<span>Created by Xyzab 2019 Made with Ɛ>.</span>
 	</footer>
 	<script src="js/jquery/jquery-3.3.1.js"></script>
 	<script src="js/parallax-mousehover/parallax.js"></script>
@@ -116,6 +116,16 @@
 	};
 
 	$(window).scroll(navbarCollapse);
+
+	var themeSettings = (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) : {};
+
+    var themeName = themeSettings.themeName || '';
+
+    if (themeName) {
+    	$('body').addClass(themeName);
+    } else {
+    	console.log('nothing');
+    }
 </script>
 </body>
 </html>
